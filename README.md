@@ -88,12 +88,21 @@ After successful login, users are redirected to their personal dashboard.
 
 ---
 
+## 🖥️ Application Flow
+
+1. User registers
+2. User logs in
+3. User accesses dashboard
+4. User creates, edits, or deletes tasks
+5. User logs out securely
+
+---
+
 ## ⚙️ Installation & Setup
 
 ### 1️⃣ Clone the Repository
 
-git clone https://github.com/Shweyy123/Task_Manager_App.git
- 
+    git clone https://github.com/Shweyy123/Task_Manager_App.git
     cd Task_Manager_App
 
 2️⃣ Install Dependencies
@@ -114,10 +123,3 @@ Open your browser and visit:
 
     http://localhost:8080
     
-
-🖥️ Application Flow
-1. User registers
-2. User logs in
-3. User accesses dashboard
-4. User creates, edits, or deletes tasks
-5. User logs out securely
