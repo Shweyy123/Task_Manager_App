@@ -9,7 +9,7 @@ This application allows users to register, log in securely, and manage their dai
 
 - **Backend:** Go (Golang)
 - **Database:** MySQL
-- **Frontend:** HTML, CSS (Bootstrap if used)
+- **Frontend:** HTML, CSS, Bootstrap, JS
 - **Authentication:** Session-based authentication
 - **Architecture:** MVC pattern
 
@@ -92,23 +92,28 @@ After successful login, users are redirected to their personal dashboard.
 
 ### 1️⃣ Clone the Repository
 
-```bash
 git clone https://github.com/Shweyy123/Task_Manager_App.git
-cd Task_Manager_App
+ 
+    cd Task_Manager_App
 
 2️⃣ Install Dependencies
-go mod tidy
+
+    go mod tidy
 
 3️⃣ Setup MySQL Database
-CREATE DATABASE task_manager;
+
+    CREATE DATABASE task_manager;
 
 Update your database credentials inside the configuration file.
 
 4️⃣ Run the Application
-go run main.go
+
+    go run main.go
 
 Open your browser and visit:
-http://localhost:8080
+
+    http://localhost:8080
+    
 
 🖥️ Application Flow
 1. User registers
