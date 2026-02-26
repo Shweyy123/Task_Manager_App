@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dashboard - Task Manager</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body onload="loadTasks()">
+  <div class="navbar">
+    <h2>Task Manager</h2>
+    <button class="logout-btn" onclick="logout()">Logout</button>
+  </div>
+
+  <div class="container">
+    <div class="stats">
+      <div class="stat-card"><h3>Total</h3><h2 id="totalCount">0</h2></div>
+      <div class="stat-card"><h3>Completed</h3><h2 id="completedCount">0</h2></div>
+      <div class="stat-card"><h3>Pending</h3><h2 id="pendingCount">0</h2></div>
+    </div>
+
+    <div class="task-form">
+      <input id="title" placeholder="Task Title">
+      <input id="desc" placeholder="Task Description">
+      <button onclick="createTask()">Add Task</button>
+    </div>
+
+    <div id="tasks"></div>
+  </div>
+
+  <div class="modal" id="editModal">
+    <div class="modal-content">
+      <h3>Edit Task</h3>
+      <input id="editTitle" placeholder="Title">
+      <textarea id="editDesc" placeholder="Description"></textarea>
+      <button onclick="saveEdit()">Save</button>
+    </div>
+  </div>
+
+  <div class="toast" id="toast"></div>
+  <script src="script.js"></script>
+</body>
+</html>
